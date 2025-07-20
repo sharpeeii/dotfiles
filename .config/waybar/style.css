@@ -1,0 +1,124 @@
+@import "mocha.css"; 
+
+* {
+    font-family: "JetBrainsMono Nerd Font Propo ";
+    font-size: 10px;
+    min-height: 0;
+    font-weight: bold;
+}
+#custom-power
+{
+    margin-left: 5px;
+}
+
+window#waybar {
+    background-color: @mantle;
+    color: @overlay0;
+}
+
+#window {
+    margin: 8px;
+    padding-left: 8;
+    padding-right: 8;
+}
+#custom-notification{
+	color: @sky;
+}
+
+
+button {
+	color: @overlay1;
+}
+
+button:hover {
+    background: inherit;
+    background-color: @lavender;
+    border-radius: 5px;
+}
+
+#workspaces button {
+    padding: 0 4px;
+}
+
+#workspaces button.focused {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @rosewater;
+}
+
+#workspaces button.active {
+    background-color: @mauve;
+    color: @mantle;
+    border-radius: 5px;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#pulseaudio,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#wireplumber,
+#tray,
+#network,
+#mode,
+#scratchpad {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#clock {
+    color: @lavender;
+}
+#bat {
+    color: @mauve;
+}
+#hardware {
+	color: @overlay1;
+}
+
+
+#clock.date {
+    color: @mauve;
+    border-bottom: 2px solid @mauve;
+}
+
+#pulseaudio {
+    color: @teal;
+}
+
+#nets{
+    color: @mauve;
+}
+
+#idle_inhibitor {
+    margin-right: 8px;
+}
+
+
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}
+
+#custom-vpn {
+    color: @lavender;
+    border-radius: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
